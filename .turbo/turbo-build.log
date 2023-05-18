@@ -1,0 +1,49 @@
+
+> next-ecommerce@0.1.0 build
+> next build
+
+info  - Loaded env from C:\Users\Dell\Desktop\NextJs\next-ecommerce\.env.local
+info  - Loaded env from C:\Users\Dell\Desktop\NextJs\next-ecommerce\.env
+warn  - You have enabled experimental feature (appDir) in next.config.js.
+warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
+
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Linting and checking validity of types...
+info  - Collecting page data...
+info  - Generating static pages (0/5)
+(node:16312) ExperimentalWarning: buffer.Blob is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+info  - Generating static pages (1/5)
+info  - Generating static pages (2/5)
+info  - Generating static pages (3/5)
+warn  - Entire page /dashboard deopted into client-side rendering. https://nextjs.org/docs/messages/deopted-into-client-rendering /dashboard
+warn  - Entire page / deopted into client-side rendering. https://nextjs.org/docs/messages/deopted-into-client-rendering /
+info  - Generating static pages (5/5)
+info  - Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+┌ λ /                                      184 B          86.4 kB
+├ λ /dashboard                             137 B            76 kB
+├ ○ /favicon.ico                           0 B                0 B
+└ λ /product/[id]                          663 B          84.1 kB
++ First Load JS shared by all              75.9 kB
+  ├ chunks/139-99d0406c653c5502.js         23.5 kB
+  ├ chunks/2443530c-48751f9383c5f005.js    50.5 kB
+  ├ chunks/main-app-a812796c5088edc3.js    214 B
+  └ chunks/webpack-660a350aa2736d65.js     1.74 kB
+
+Route (pages)                              Size     First Load JS
+┌ ○ /404                                   178 B            86 kB
+├ λ /api/auth/[...nextauth]                0 B            85.8 kB
+├ λ /api/create-payment-intent             0 B            85.8 kB
+└ λ /api/webhooks                          0 B            85.8 kB
++ First Load JS shared by all              85.8 kB
+  ├ chunks/main-8908b5dad77210cd.js        83.9 kB
+  ├ chunks/pages/_app-c544d6df833bfd4a.js  192 B
+  └ chunks/webpack-660a350aa2736d65.js     1.74 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
